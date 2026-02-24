@@ -263,22 +263,7 @@ function initCallButtons() {
     callButtons.forEach(btn => {
         if (btn) {
             // Set href to primary number
-            btn.setAttribute('href', 'tel:+917947107253');
-            
-            btn.addEventListener('click', function(e) {
-                // On mobile devices, tel: link will work directly
-                // On desktop, it may open dialer or show both numbers
-                // The href attribute handles the call functionality
-            });
-        }
-    });
-    
-    // Also update any other call links
-    const otherCallLinks = document.querySelectorAll('a[href*="tel:"]');
-    otherCallLinks.forEach(link => {
-        const href = link.getAttribute('href');
-        if (href && href.includes('919876543210')) {
-            link.setAttribute('href', 'tel:+917947107253');
+            btn.setAttribute('href', 'tel:9179210310');
         }
     });
 }

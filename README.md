@@ -276,7 +276,7 @@ This project is open source and available for use.
 
 For issues or questions, please contact:
 - Email: info@hotelsmjinternational.com
-- Phone: +91 98765 43210
+- Phone: 9179210310, 6269210310
 
 ---
 
