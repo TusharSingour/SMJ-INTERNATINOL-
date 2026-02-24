@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Admin Panel - Hotel SMJ International">
+    <title>Admin Panel - Hotel SMJ International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="hotel-logo">🏨</div>
+            <div class="loader-text">Hotel SMJ International</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Login Section -->
+    <div id="loginSection" class="admin-login-section">
+        <div class="admin-login-container">
+            <div class="admin-login-card">
+                <div class="admin-login-header">
+                    <h1>🏨</h1>
+                    <h2>Admin Login</h2>
+                    <p>Hotel SMJ International</p>
+                </div>
+                <form id="adminLoginForm" class="admin-login-form">
+                    <div class="form-group">
+                        <label for="adminEmail">Email Address</label>
+                        <input type="email" id="adminEmail" name="email" required autocomplete="email">
+                        <span class="error-message" id="loginEmailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="adminPassword">Password</label>
+                        <input type="password" id="adminPassword" name="password" required autocomplete="current-password">
+                        <span class="error-message" id="loginPasswordError"></span>
+                    </div>
+                    <div class="error-message" id="loginError"></div>
+                    <button type="submit" class="btn btn-primary btn-block" id="loginBtn">
+                        <span class="btn-text">Login</span>
+                        <span class="btn-loader" style="display: none;"></span>
+                    </button>
+                </form>
+                <div class="admin-login-footer">
+                    <a href="index.html">← Back to Website</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dashboard Section -->
+    <div id="dashboardSection" class="admin-dashboard" style="display: none;">
+        <!-- Admin Navbar -->
+        <nav class="admin-navbar">
+            <div class="container">
+                <div class="admin-nav-content">
+                    <div class="admin-nav-brand">
+                        <h2>🏨 Admin Dashboard</h2>
+                    </div>
+                    <div class="admin-nav-actions">
+                        <span class="admin-user" id="adminUserEmail"></span>
+                        <button class="btn btn-secondary" id="logoutBtn">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Dashboard Content -->
+        <div class="admin-dashboard-content">
+            <div class="container">
+                <div class="dashboard-header">
+                    <h1>Bookings Management</h1>
+                    <p>Manage all hotel reservations</p>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📋</div>
+                        <div class="stat-content">
+                            <h3 id="totalBookings">0</h3>
+                            <p>Total Bookings</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-content">
+                            <h3 id="pendingBookings">0</h3>
+                            <p>Pending</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-content">
+                            <h3 id="totalRevenue">₹0</h3>
+                            <p>Total Revenue</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bookings Table -->
+                <div class="bookings-table-container">
+                    <div class="table-header">
+                        <h2>All Bookings</h2>
+                        <button class="btn btn-secondary" id="refreshBtn">🔄 Refresh</button>
+                    </div>
+                    <div class="table-wrapper">
+                        <table class="bookings-table">
+                            <thead>
+                                <tr>
+                                    <th>Booking ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Room Type</th>
+                                    <th>Check-in</th>
+                                    <th>Check-out</th>
+                                    <th>Guests</th>
+                                    <th>Amount</th>
+                                    <th>Date</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="bookingsTableBody">
+                                <tr>
+                                    <td colspan="11" class="no-data">Loading bookings...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h2>Confirm Delete</h2>
+                <p>Are you sure you want to delete this booking?</p>
+                <p class="delete-booking-info" id="deleteBookingInfo"></p>
+                <div class="modal-actions">
+                    <button class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+                    <button class="btn btn-secondary" id="cancelDeleteBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts removed to keep page HTML + CSS only -->
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our luxurious rooms and event spaces - Deluxe, Super Deluxe, Family Suite, Premium Room, and Wedding & Event Hall at Hotel SMJ International, Mandla.">
+    <title>Rooms & Events - Hotel SMJ International</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="hotel-logo">🏨</div>
+            <div class="loader-text">Hotel SMJ International</div>
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Hotel SMJ International</h1>
+            </div>
+            <!-- Mobile nav toggle (CSS-only) -->
+            <input type="checkbox" id="navToggleRooms" class="nav-toggle" aria-label="Toggle navigation menu">
+            <label for="navToggleRooms" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Rooms</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="admin.html" class="admin-link">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Rooms & Events Header -->
+    <section class="page-header" id="rooms-events-top">
+        <div class="page-header-overlay"></div>
+        <div class="page-header-content">
+            <h1>Rooms & Events</h1>
+            <p>Premium Rooms & Grand Event Hall for Every Occasion</p>
+        </div>
+    </section>
+
+    <!-- Rooms & Events Section -->
+    <section class="rooms-events section" id="rooms-events">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Rooms & Event Hall</h2>
+                <p class="section-subtitle">Choose from our curated room categories and a fully-equipped wedding & event hall.</p>
+            </div>
+
+            <div class="rooms-events-grid">
+                <!-- Deluxe Room -->
+                <article class="room-event-card">
+                    <div class="card-image">
+                        <img src="https://content3.jdmagicbox.com/v2/comp/mandla/r3/9999p7642.7642.230827114211.k6r3/catalogue/hotel-smj-international-maharajpur-mandla-hotels-q8w84c19ca.jpg" alt="Deluxe Room at Hotel SMJ International">
+                        <span class="card-tag">Popular Choice</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Deluxe Room</h2>
+                        <p class="card-description">Cozy and elegant room ideal for solo travelers and couples, with all essential comforts and a warm ambiance.</p>
+                        <div class="card-price">₹2,500 <span>/night</span></div>
+                        <div class="facilities-icons">
+                            <span><span class="facility-symbol">❄️</span> AC</span>
+                            <span><span class="facility-symbol">📶</span> WiFi</span>
+                            <span><span class="facility-symbol">📺</span> TV</span>
+                            <span><span class="facility-symbol">🚗</span> Parking</span>
+                            <span><span class="facility-symbol">🛎️</span> Room Service</span>
+                        </div>
+                        <a href="booking.html?room=Deluxe%20Room" class="btn btn-primary card-btn">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Super Deluxe Room -->
+                <article class="room-event-card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqDBg45SHW09SzQXTtwAID85EWa662PMLGQ&s" alt="Super Deluxe Room at Hotel SMJ International">
+                        <span class="card-tag card-tag-premium">High Comfort</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Super Deluxe Room</h2>
+                        <p class="card-description">Spacious, stylish, and perfect for guests who prefer extra comfort, premium bedding, and enhanced amenities.</p>
+                        <div class="card-price">₹3,500 <span>/night</span></div>
+                        <div class="facilities-icons">
+                            <span><span class="facility-symbol">❄️</span> AC</span>
+                            <span><span class="facility-symbol">📶</span> WiFi</span>
+                            <span><span class="facility-symbol">📺</span> Smart TV</span>
+                            <span><span class="facility-symbol">🚗</span> Parking</span>
+                            <span><span class="facility-symbol">🛎️</span> Room Service</span>
+                        </div>
+                        <a href="booking.html?room=Super%20Deluxe%20Room" class="btn btn-primary card-btn">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Family Suite -->
+                <article class="room-event-card">
+                    <div class="card-image">
+                        <img src="https://r1imghtlak.mmtcdn.com/305bb16b-4055-4d03-a8a2-741c1c475827.jpeg" alt="Family Suite at Hotel SMJ International">
+                        <span class="card-tag card-tag-family">Best for Families</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Family Suite</h2>
+                        <p class="card-description">A spacious suite with separate zones for relaxation and sleep, designed to comfortably host families and groups.</p>
+                        <div class="card-price">₹5,000 <span>/night</span></div>
+                        <div class="facilities-icons">
+                            <span><span class="facility-symbol">❄️</span> AC</span>
+                            <span><span class="facility-symbol">📶</span> WiFi</span>
+                            <span><span class="facility-symbol">📺</span> TV</span>
+                            <span><span class="facility-symbol">🚗</span> Parking</span>
+                            <span><span class="facility-symbol">🛎️</span> Room Service</span>
+                        </div>
+                        <a href="booking.html?room=Family%20Suite" class="btn btn-primary card-btn">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Premium Room -->
+                <article class="room-event-card">
+                    <div class="card-image">
+                        <img src="https://content.jdmagicbox.com/v2/comp/mandla/r3/9999p7642.7642.230827114211.k6r3/catalogue/hotel-smj-international-maharajpur-mandla-hotels-q8w84c19ca-250.jpg" alt="Premium Room at Hotel SMJ International">
+                        <span class="card-tag card-tag-gold">Premium</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Premium Room</h2>
+                        <p class="card-description">Elegant premium room with refined interiors, ideal for business travelers and guests seeking a luxury experience.</p>
+                        <div class="card-price">₹4,000 <span>/night</span></div>
+                        <div class="facilities-icons">
+                            <span><span class="facility-symbol">❄️</span> AC</span>
+                            <span><span class="facility-symbol">📶</span> WiFi</span>
+                            <span><span class="facility-symbol">📺</span> TV</span>
+                            <span><span class="facility-symbol">🚗</span> Parking</span>
+                            <span><span class="facility-symbol">🛎️</span> Room Service</span>
+                        </div>
+                        <a href="booking.html?room=Premium%20Room" class="btn btn-primary card-btn">Book Now</a>
+                    </div>
+                </article>
+
+                <!-- Wedding & Event Hall -->
+                <article class="room-event-card event-hall-card">
+                    <div class="card-image">
+                        <img src="https://r1imghtlak.mmtcdn.com/57208d75-b481-4577-b96a-d26d53c1f37c.jpeg" alt="Wedding and Event Hall at Hotel SMJ International">
+                        <span class="card-tag card-tag-event">Events & Weddings</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Wedding & Event Hall</h2>
+                        <p class="card-description">A beautifully decorated hall suitable for weddings, receptions, parties, and corporate events with full support from our team.</p>
+                        <ul class="event-highlights">
+                            <li>Suitable for weddings, parties & corporate events</li>
+                            <li>Capacity: 200+ guests</li>
+                            <li>Fully decorated hall with premium ambiance</li>
+                            <li>Catering support available on request</li>
+                            <li>Ample parking facility for guests</li>
+                        </ul>
+                        <div class="card-price">Up to ₹30,000 <span>/event</span></div>
+                        <div class="facilities-icons">
+                            <span><span class="facility-symbol">❄️</span> AC Hall</span>
+                            <span><span class="facility-symbol">📶</span> WiFi</span>
+                            <span><span class="facility-symbol">🎤</span> Sound Setup</span>
+                            <span><span class="facility-symbol">🚗</span> Parking</span>
+                            <span><span class="facility-symbol">🍽️</span> Catering</span>
+                        </div>
+                        <a href="tel:+917947107253" class="btn btn-primary card-btn">Book Event</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-luxury section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">A glimpse of our luxury spaces and interiors</p>
+            </div>
+
+            <div class="gallery-grid-luxury">
+                <a href="#gallery-img1" class="gallery-item-luxury">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://r1imghtlak.ibcdn.com/53bc27f878ae11ed90f00a58a9feac02.jpg?downsize=382:159&output-format=webp" alt="Hotel SMJ International exterior and entrance">
+                    </div>
+                </a>
+                <a href="#gallery-img2" class="gallery-item-luxury">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201806271527058241-dc1d9e00842611e8889c0ad03efb9e28.jpg" alt="Luxurious room interior at Hotel SMJ International">
+                    </div>
+                </a>
+                <a href="#gallery-img3" class="gallery-item-luxury">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMegvgIsyGa1T4iFGH4kbpeix4jVWbn5Do7w&s" alt="Elegant lobby and seating area">
+                    </div>
+                </a>
+                <a href="#gallery-img4" class="gallery-item-luxury">
+                    <div class="gallery-image-wrapper">
+                        <img src="https://content.jdmagicbox.com/comp/mandla/r3/9999p7642.7642.230827114211.k6r3/catalogue/hotel-smj-international-maharajpur-mandla-hotels-1i20ujb31s.jpg" alt="Hotel SMJ International night view and facade">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- CSS-Only Lightbox Preview -->
+        <div id="gallery-img1" class="lightbox">
+            <a href="#rooms-events-top" class="lightbox-close">&times;</a>
+            <img src="https://r1imghtlak.ibcdn.com/53bc27f878ae11ed90f00a58a9feac02.jpg?downsize=382:159&output-format=webp" alt="Hotel SMJ International exterior and entrance" class="lightbox-image">
+        </div>
+        <div id="gallery-img2" class="lightbox">
+            <a href="#rooms-events-top" class="lightbox-close">&times;</a>
+            <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/htl-imgs/201806271527058241-dc1d9e00842611e8889c0ad03efb9e28.jpg" alt="Luxurious room interior at Hotel SMJ International" class="lightbox-image">
+        </div>
+        <div id="gallery-img3" class="lightbox">
+            <a href="#rooms-events-top" class="lightbox-close">&times;</a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMegvgIsyGa1T4iFGH4kbpeix4jVWbn5Do7w&s" alt="Elegant lobby and seating area" class="lightbox-image">
+        </div>
+        <div id="gallery-img4" class="lightbox">
+            <a href="#rooms-events-top" class="lightbox-close">&times;</a>
+            <img src="https://content.jdmagicbox.com/comp/mandla/r3/9999p7642.7642.230827114211.k6r3/catalogue/hotel-smj-international-maharajpur-mandla-hotels-1i20ujb31s.jpg" alt="Hotel SMJ International night view and facade" class="lightbox-image">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Hotel SMJ International</h3>
+                    <p>Luxury Stay in Mandla, Madhya Pradesh</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="booking.html">Book Now</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Mandla, MP, India</p>
+                    <p>+91 79471 07253</p>
+                    <p>+91 62692 10310</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Hotel SMJ International. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/917947107253?text=Hello, I want to book a room at Hotel SMJ International" target="_blank" class="whatsapp-btn" title="Book via WhatsApp">
+            <span>💬</span>
+        </a>
+        <a href="tel:+917947107253" class="call-btn" title="Call Us" id="floatingCallBtn">
+            <span>📞</span>
+        </a>
+    </div>
+
+    <!-- Scripts removed to keep page HTML + CSS only -->
+</body>
+</html>
